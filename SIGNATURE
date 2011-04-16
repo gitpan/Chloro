@@ -1,0 +1,82 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.66.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 04ca15443472d1b01d60309ccf487c36b4c95c50 Changes
+SHA1 2b55c166457fe3715ce6227018d55eabd47077cf INSTALL
+SHA1 c715d20265d2931c7564fc64abfdc4f8ff33e297 LICENSE
+SHA1 edcfe0971ed3d6d9aa4b0e95a7f9f62bc2cf0c5a MANIFEST
+SHA1 6f5d80bfbae9c6710c0cbe6d2f301de48e302d3d META.json
+SHA1 74d5d7bb9de29f01d3340377b10a60ae50b797ad META.yml
+SHA1 981f62b7bf1718d45d9a32c6a863a0c527132bb9 Makefile.PL
+SHA1 74b47561a36433bd0936729854b06bf149c87750 README
+SHA1 218629ccae5c72817d1035d89e5f98230dbb8826 dist.ini
+SHA1 49c2066f30640561680982c154aaa543d3a000dc lib/Chloro.pm
+SHA1 f23e48719d0b4b463e55bff9f5dab9d29a4f0823 lib/Chloro/Error/Field.pm
+SHA1 8aff33353ba24c6886572f1e3476fe7dd479c32e lib/Chloro/Error/Form.pm
+SHA1 9f559ecc962c6c0898d189772ad866c654ef26fb lib/Chloro/ErrorMessage.pm
+SHA1 9dd6c36340b9975664989d30ba5e0a0d934c0cd6 lib/Chloro/Field.pm
+SHA1 5945ab87b02e32947a0abbd172a59b85f7fc2971 lib/Chloro/Group.pm
+SHA1 04945478c897ac0bd6aee8b6af4e13503be74658 lib/Chloro/Manual.pod
+SHA1 173d3e9adbefe2ce1a2365d4895ef103a8153c47 lib/Chloro/Manual/Groups.pod
+SHA1 13c45606349de23f0c3699157ddf42d7638eddea lib/Chloro/Manual/Intro.pod
+SHA1 6d63dec283b1b7fbc5dd9cf98345142fe169b99c lib/Chloro/Result/Field.pm
+SHA1 e3522ddb52a7acc3da8f10c4ef90d882c6bf288a lib/Chloro/Result/Group.pm
+SHA1 424706b584651cf2c24fd59ba563e6e5cd240837 lib/Chloro/ResultSet.pm
+SHA1 91a09808510ffab34cc39dfc5dbc84fed19df7a1 lib/Chloro/Role/Error.pm
+SHA1 67824cca5fbd3837665488a075f2875010533def lib/Chloro/Role/Form.pm
+SHA1 6392f58a6af14622526faaa169ec78c58ae533e3 lib/Chloro/Role/FormComponent.pm
+SHA1 d17edab3e0b661f25b206450af4aeef84ce62cc0 lib/Chloro/Role/Result.pm
+SHA1 041befd8b7050b13a11ee388cec45ab3da162a3f lib/Chloro/Role/ResultSet.pm
+SHA1 71bbc92a01ef222b533d4c59152a0611165f1e88 lib/Chloro/Role/Trait/HasFormComponents.pm
+SHA1 ade353326beb77e6e3f56b0403479842008905c7 lib/Chloro/Trait/Application.pm
+SHA1 e70ba2c24bebfdb4a1b3bdcb76e2f68d8600fa23 lib/Chloro/Trait/Application/ToClass.pm
+SHA1 6e18ff581ef90ffbe65aea151d2e56d96404c861 lib/Chloro/Trait/Application/ToRole.pm
+SHA1 771b161c003e7943b938af832edcd584ece4bbc5 lib/Chloro/Trait/Class.pm
+SHA1 9d658f2b57ac9ca2e8fa04cee8b65ee507627639 lib/Chloro/Trait/Role.pm
+SHA1 17a6b3e70bc62abe6249501a4c35ff04c4895dd1 lib/Chloro/Trait/Role/Composite.pm
+SHA1 29bf95a037324a9e12921111fc02a4865b43efef lib/Chloro/Types.pm
+SHA1 868ed0774a529b3a8b5c491359dac84d53b896ee lib/Chloro/Types/Internal.pm
+SHA1 6d092eaeb12c82834e92a41fbbab3bb950c3e329 t/basic.t
+SHA1 ebe36cc2770da870fb9b586e12de6396c71c4867 t/bool.t
+SHA1 00da05416de61c9b95acb2ee4d64e8aa14a2073e t/default.t
+SHA1 ab450513a2ef57f5e9a77edf29389733a5990048 t/extractor.t
+SHA1 818b34a8dc2cfc7a2fab11e5d176112e4a8674fe t/extractor2.t
+SHA1 be8596f00aaf84442c30a4a7b4731016a6263da5 t/form-error.t
+SHA1 80fda00c6922925d0b53efb930c66ba36d23d916 t/group.t
+SHA1 468a419d27f122158e63a7bfaf74e8536589794b t/inheritance.t
+SHA1 28d25cee2dc0352e5714c6d01c0aa4490dd7122d t/lib/Chloro/Test/Address.pm
+SHA1 3abfc76f7d3b3a0a84481e5ae51708a5d2ccaa05 t/lib/Chloro/Test/CompoundDate.pm
+SHA1 591a70f6b9074a2de6ccc1a631e2c7bbefa38e40 t/lib/Chloro/Test/DateFromStr.pm
+SHA1 24e13140f2d91f5f73fd08362638b4d2b22a58f4 t/lib/Chloro/Test/Default.pm
+SHA1 1c56bdf38af96320821e3c5cf8f6a646f90a135b t/lib/Chloro/Test/Login.pm
+SHA1 ea7751f817d6cc8174ff9417bd52ef1e052c9459 t/lib/Chloro/Test/User.pm
+SHA1 f702693fa90fedd2d8995544641bdc5deef9de70 t/lib/Chloro/Test/Validator.pm
+SHA1 2346c6403f21d316327ee1d2b7857a60c76ef278 t/release-cpan-changes.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
+SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
+SHA1 5b2007c82b8644132c76b1fe7ecfb31c5236afb3 t/release-pod-coverage.t
+SHA1 7856e4c9b3e890ab4f2c037273a2a104a2b22896 t/release-pod-spell.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
+SHA1 b04d3c54e55d76bede65f6d7958107456e562af8 t/role.t
+SHA1 684a1ddc621622522b5231d682c7642de9f2f9d2 t/storable.t
+SHA1 835f9a77bc9bd2d8aca66b9422dac0a98ea6320d t/validator.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.10 (GNU/Linux)
+
+iEYEARECAAYFAk2pxkYACgkQIgMCsV8qvRLLdACeI+Hox1I7yXhqhnfaWeWlmC9r
+r5oAnjhmRhPgrMCgUMj41udI09nk6wZl
+=0aBS
+-----END PGP SIGNATURE-----
