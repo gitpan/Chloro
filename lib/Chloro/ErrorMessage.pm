@@ -1,6 +1,6 @@
 package Chloro::ErrorMessage;
 BEGIN {
-  $Chloro::ErrorMessage::VERSION = '0.01';
+  $Chloro::ErrorMessage::VERSION = '0.02';
 }
 
 use Moose;
@@ -38,7 +38,7 @@ Chloro::ErrorMessage - An error message
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

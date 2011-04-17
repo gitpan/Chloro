@@ -1,6 +1,6 @@
 package Chloro::Error::Field;
 BEGIN {
-  $Chloro::Error::Field::VERSION = '0.01';
+  $Chloro::Error::Field::VERSION = '0.02';
 }
 
 use Moose;
@@ -41,7 +41,7 @@ Chloro::Error::Field - An error associated with a specific field
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

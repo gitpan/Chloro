@@ -1,6 +1,6 @@
 package Chloro::Role::Trait::HasFormComponents;
 BEGIN {
-  $Chloro::Role::Trait::HasFormComponents::VERSION = '0.01';
+  $Chloro::Role::Trait::HasFormComponents::VERSION = '0.02';
 }
 
 use Moose::Role;
@@ -93,7 +93,7 @@ Chloro::Role::Trait::HasFormComponents - A metaclass trait for classes and roles
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 

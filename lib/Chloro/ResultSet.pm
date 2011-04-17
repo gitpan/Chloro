@@ -1,6 +1,6 @@
 package Chloro::ResultSet;
 BEGIN {
-  $Chloro::ResultSet::VERSION = '0.01';
+  $Chloro::ResultSet::VERSION = '0.02';
 }
 
 use Moose;
@@ -136,7 +136,7 @@ Chloro::ResultSet - The set of results from processing a form submission
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

@@ -21,8 +21,16 @@ my %WriteMakefileArgs = (
   'EXE_FILES' => [],
   'LICENSE' => 'artistic_2',
   'NAME' => 'Chloro',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.01',
+  'PREREQ_PM' => {
+    'List::AllUtils' => '0',
+    'Moose' => '1.25',
+    'MooseX::Params::Validate' => '0',
+    'MooseX::StrictConstructor' => '0.15',
+    'MooseX::Types' => '0',
+    'Tie::IxHash' => '0',
+    'namespace::autoclean' => '0.12'
+  },
+  'VERSION' => '0.02',
   'test' => {
     'TESTS' => 't/*.t'
   }

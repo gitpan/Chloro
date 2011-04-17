@@ -1,6 +1,6 @@
 package Chloro::Result::Field;
 BEGIN {
-  $Chloro::Result::Field::VERSION = '0.01';
+  $Chloro::Result::Field::VERSION = '0.02';
 }
 
 use Moose;
@@ -59,7 +59,7 @@ Chloro::Result::Field - A result for a single field
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 SYNOPSIS
 

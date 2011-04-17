@@ -1,6 +1,6 @@
 package Chloro::Trait::Application::ToClass;
 BEGIN {
-  $Chloro::Trait::Application::ToClass::VERSION = '0.01';
+  $Chloro::Trait::Application::ToClass::VERSION = '0.02';
 }
 
 use Moose::Role;
@@ -68,7 +68,7 @@ Chloro::Trait::Application::ToClass - A trait that supports applying Chloro fiel
 
 =head1 VERSION
 
-version 0.01
+version 0.02
 
 =head1 DESCRIPTION
 
