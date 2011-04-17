@@ -14,41 +14,41 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 6c11dbba4e8f4033d1ba54193a12c642984962ab Changes
+SHA1 b8fa6b81fb163bc03be3ae2bf3043a0a71a1d168 Changes
 SHA1 2b55c166457fe3715ce6227018d55eabd47077cf INSTALL
 SHA1 c715d20265d2931c7564fc64abfdc4f8ff33e297 LICENSE
 SHA1 edcfe0971ed3d6d9aa4b0e95a7f9f62bc2cf0c5a MANIFEST
-SHA1 e648066f1f72767f0ab753646d6372b0b2fe6bdf META.json
-SHA1 4bb82e06982ed27bd90426b6503dfa8e418f1a32 META.yml
-SHA1 bfeddf6764c60674aad6bfd41380ad11875a3fbc Makefile.PL
-SHA1 73ec496c52cf565ca299cfedac6960362c227197 README
-SHA1 9afb6601d2f2223648eec1c3667c63b2ebbff059 dist.ini
-SHA1 7076de292408aff699b4e3cc9429e39cf4b3ffd6 lib/Chloro.pm
-SHA1 f8649253c58ab1b1ad9897b5d20b9dcd63862eac lib/Chloro/Error/Field.pm
-SHA1 c75de9e2753978d03c4ffe41e4efb61aad9b60e9 lib/Chloro/Error/Form.pm
-SHA1 993f294117f41ad06c11bc0e18e42eb36e5ee669 lib/Chloro/ErrorMessage.pm
-SHA1 0d6f15c09c7b7f1b5e68b3885b39c52a3e371adb lib/Chloro/Field.pm
-SHA1 be6b8791344edab756982d602ae0fe63c94fcafa lib/Chloro/Group.pm
-SHA1 f6f87ac2eb61f55440e510920f9911142ea1a442 lib/Chloro/Manual.pod
-SHA1 b7ec8bc8c513851c0d5b81d38427f362369ffb53 lib/Chloro/Manual/Groups.pod
-SHA1 526d09f34a0ff8bbf1bc6091d263811512581b3f lib/Chloro/Manual/Intro.pod
-SHA1 baaf0df5397c45bccb6c74f7dc0d0776249eef78 lib/Chloro/Result/Field.pm
-SHA1 0a0a1f74da8f64124f6772e3d5ff52a888142e04 lib/Chloro/Result/Group.pm
-SHA1 76d80fa74d3bf67addd609d3f06b5225a2d20b2f lib/Chloro/ResultSet.pm
-SHA1 3dfd57df652fa458f8b6c26e69b371b0e7cb6c8e lib/Chloro/Role/Error.pm
-SHA1 7a3aac81009e38f4359afca80e30a1f9989a3200 lib/Chloro/Role/Form.pm
-SHA1 12fcd2a19aa9f24350c41e9ac1523df99c5be38e lib/Chloro/Role/FormComponent.pm
-SHA1 46e640d762c0ea6cf72a712ed1ffebf53b74aac5 lib/Chloro/Role/Result.pm
-SHA1 9041c3970f3932a6d3213b79378ded4575072f08 lib/Chloro/Role/ResultSet.pm
-SHA1 c7be5f50d7a6fe84d15e28dd437b3332aa851072 lib/Chloro/Role/Trait/HasFormComponents.pm
-SHA1 063cb02505bb5c9e213397dd46da42ca3002150b lib/Chloro/Trait/Application.pm
-SHA1 505b63040bfdcb98d411847ed7cf7a8d7ab59d47 lib/Chloro/Trait/Application/ToClass.pm
-SHA1 73315b61cb21112caab66f154fc0aefce32f23e0 lib/Chloro/Trait/Application/ToRole.pm
-SHA1 2e5490f4f581d37dda8ecab9dcb228a1819d7abe lib/Chloro/Trait/Class.pm
-SHA1 24ae2c78419420ab01eedb86178be324eaf74845 lib/Chloro/Trait/Role.pm
-SHA1 e9d31e5776aacf1a18462606923986fa6f4f0753 lib/Chloro/Trait/Role/Composite.pm
-SHA1 67692cd058049b8ad3aa4787095f03534c4b2589 lib/Chloro/Types.pm
-SHA1 9a208677453b63f0d421eecfceab2e40c323820a lib/Chloro/Types/Internal.pm
+SHA1 9615f228a1d70f90e52026119b241eaf7071eaba META.json
+SHA1 08064b6dbc1f7d7fb8950c10f4c6b005528330f2 META.yml
+SHA1 8ab789ffd167d782c6ea99e147506e223158c7f9 Makefile.PL
+SHA1 b8bbb0a01ab83db93bc64fcdab0c749180cfdfc7 README
+SHA1 9c279ac1fe0d1c5d56eed8817c0fb36907997358 dist.ini
+SHA1 20b0d0f4a8289320174a4a8476a8553bbf89f7a2 lib/Chloro.pm
+SHA1 91ad87a5814b018ec18c0248a0cb217984d84d76 lib/Chloro/Error/Field.pm
+SHA1 16ee7b32d4708995dcc9e49ed5249d321df868d9 lib/Chloro/Error/Form.pm
+SHA1 062bfda0586dd2f608ea2e9874c41edd58fdf5cb lib/Chloro/ErrorMessage.pm
+SHA1 03a6ac40c52a46d3c3e1938549a5b427a274e21c lib/Chloro/Field.pm
+SHA1 76b0b593928f9d1e3c8130db9855344bdddb2c5d lib/Chloro/Group.pm
+SHA1 b4f2c110ec0e88a7d8d4d053d1d2442cc28dbdfe lib/Chloro/Manual.pod
+SHA1 a3d61c83ec8236be76228f7b86037ff8610d4e99 lib/Chloro/Manual/Groups.pod
+SHA1 86e1d94dd547f97bcf9f2f68009ab9f920847dee lib/Chloro/Manual/Intro.pod
+SHA1 8663577a080575c4878a3e9c85bcf1a90b8a2aa1 lib/Chloro/Result/Field.pm
+SHA1 e31c0324f273153afef500337bcd1e71df4fc635 lib/Chloro/Result/Group.pm
+SHA1 04ed2a823a2d9c1b861a7ada538e48532abb29cb lib/Chloro/ResultSet.pm
+SHA1 b8f1d798a51eff5a0d49be5586624b842edc52af lib/Chloro/Role/Error.pm
+SHA1 a80b4a69e3d19ea1b1faa42d5726ac4ff5253ef4 lib/Chloro/Role/Form.pm
+SHA1 68f8c42b3bc5192c646fa2e7973844535591cd70 lib/Chloro/Role/FormComponent.pm
+SHA1 470568ce0e94eaab83bfd0f365fabb7e9fd9df77 lib/Chloro/Role/Result.pm
+SHA1 3f1dd9fc54182fca62e5f7c69bdc4d2e427ea43e lib/Chloro/Role/ResultSet.pm
+SHA1 ee6189d391e0f9f140175e1e399257ccf4728564 lib/Chloro/Role/Trait/HasFormComponents.pm
+SHA1 26fbe623e64cc196d0dc1bacd03531c843537883 lib/Chloro/Trait/Application.pm
+SHA1 6bcdb4260d18313055e9b7e9b342f5446dd9f4b8 lib/Chloro/Trait/Application/ToClass.pm
+SHA1 6055ec134fa3e5a44ad371f361d64d096649a8fa lib/Chloro/Trait/Application/ToRole.pm
+SHA1 ea0acfb7ec105df536802b19cc63c9c058d4d4d8 lib/Chloro/Trait/Class.pm
+SHA1 76bb8f2e78de1ba9999a05a7de92ab1cbde22905 lib/Chloro/Trait/Role.pm
+SHA1 2e492272402bebacb74f7b229087a22cef2a18e9 lib/Chloro/Trait/Role/Composite.pm
+SHA1 2552b34158697ff8d377cadb34ea27a58375ada2 lib/Chloro/Types.pm
+SHA1 868e091d089f6e6e8b677645376727cca894bb14 lib/Chloro/Types/Internal.pm
 SHA1 6d092eaeb12c82834e92a41fbbab3bb950c3e329 t/basic.t
 SHA1 ebe36cc2770da870fb9b586e12de6396c71c4867 t/bool.t
 SHA1 00da05416de61c9b95acb2ee4d64e8aa14a2073e t/default.t
@@ -76,7 +76,7 @@ SHA1 835f9a77bc9bd2d8aca66b9422dac0a98ea6320d t/validator.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAk2q658ACgkQIgMCsV8qvRK32ACeLx3EnAfonDUsh57XQMtwwn3q
-r9oAn04BUpDhm1Yhwk7rDKAWGdE1Cwqc
-=CyTt
+iEYEARECAAYFAk2q7BEACgkQIgMCsV8qvRJcXACfWAAymkMfd1TOpkwTzl4RNUTM
+SxEAn12ErpxoYWvCWbnuY/WHoQId8Zgl
+=o6yz
 -----END PGP SIGNATURE-----

@@ -1,4 +1,4 @@
-package Chloro::Manual::Groups;
+package Chloro::Manual;
 
 # ABSTRACT: Learn how to use Chloro
 
@@ -8,11 +8,11 @@ package Chloro::Manual::Groups;
 
 =head1 NAME
 
-Chloro::Manual::Groups - Learn how to use Chloro
+Chloro::Manual - Learn how to use Chloro
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 MANUAL DOCUMENTS
 

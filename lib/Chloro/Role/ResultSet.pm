@@ -1,6 +1,6 @@
 package Chloro::Role::ResultSet;
 BEGIN {
-  $Chloro::Role::ResultSet::VERSION = '0.03';
+  $Chloro::Role::ResultSet::VERSION = '0.04';
 }
 
 use Moose::Role;
@@ -35,7 +35,7 @@ Chloro::Role::ResultSet - An interface-only for resultset classes
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 

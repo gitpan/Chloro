@@ -1,6 +1,6 @@
 package Chloro::Role::Error;
 BEGIN {
-  $Chloro::Role::Error::VERSION = '0.03';
+  $Chloro::Role::Error::VERSION = '0.04';
 }
 
 use Moose::Role;
@@ -21,7 +21,7 @@ Chloro::Role::Error - An interface role for error objects
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 DESCRIPTION
 
