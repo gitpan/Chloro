@@ -26,6 +26,7 @@
             "MooseX::Params::Validate" : 0,
             "MooseX::StrictConstructor" : "0.15",
             "MooseX::Types" : 0,
+            "MooseX::Types::Common::String" : 0,
             "Tie::IxHash" : 0,
             "namespace::autoclean" : "0.12"
          }
@@ -48,6 +49,6 @@
          "web" : "http://hg.urth.org/hg/Chloro"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

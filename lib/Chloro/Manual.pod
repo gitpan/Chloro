@@ -12,7 +12,7 @@ Chloro::Manual::Groups - Learn how to use Chloro
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 MANUAL DOCUMENTS
 

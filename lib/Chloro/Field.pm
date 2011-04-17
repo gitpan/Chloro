@@ -1,6 +1,6 @@
 package Chloro::Field;
 BEGIN {
-  $Chloro::Field::VERSION = '0.02';
+  $Chloro::Field::VERSION = '0.03';
 }
 
 use Moose;
@@ -134,7 +134,7 @@ Chloro::Field - A field in a form
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

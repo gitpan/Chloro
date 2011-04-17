@@ -1,3 +1,8 @@
+0.03     2011-04-17
+
+- Last release was still missing a dependency.
+
+
 0.02     2011-04-16
 
 - Why do I keep forgetting to include any prereqs when I first a new module? I

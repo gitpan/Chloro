@@ -1,6 +1,6 @@
 package Chloro::Role::Form;
 BEGIN {
-  $Chloro::Role::Form::VERSION = '0.02';
+  $Chloro::Role::Form::VERSION = '0.03';
 }
 
 use Moose::Role;
@@ -248,7 +248,7 @@ Chloro::Role::Form - A role for form classes
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

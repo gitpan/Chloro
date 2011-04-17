@@ -1,6 +1,6 @@
 package Chloro::Result::Group;
 BEGIN {
-  $Chloro::Result::Group::VERSION = '0.02';
+  $Chloro::Result::Group::VERSION = '0.03';
 }
 
 use Moose;
@@ -73,7 +73,7 @@ Chloro::Result::Group - A result for a single group
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 

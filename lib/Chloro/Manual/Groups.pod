@@ -12,7 +12,7 @@ Chloro::Manual::Groups - Repeatable groups in forms
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 WHAT'S A REPEATABLE GROUP?
 
