@@ -99,6 +99,12 @@ my $form = Chloro::Test::Login->new();
 
     my $pw_result = $set->result_for('password');
 
+    is_deeply(
+        $pw_result->param_names(),
+        ['password'],
+        'param_names returns expected value'
+    );
+
     ok(
        !$pw_result->is_valid(),
         'result for password is not valid'
@@ -114,6 +120,12 @@ my $form = Chloro::Test::Login->new();
             'The password field is required.'
         ],
         'errors for password result'
+    );
+
+    is_deeply(
+        [ map { $_->result() } $pw_result->errors() ],
+        [ $pw_result, ],
+        'error refers back to result object'
     );
 }
 

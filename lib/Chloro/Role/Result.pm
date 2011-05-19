@@ -1,6 +1,6 @@
 package Chloro::Role::Result;
 BEGIN {
-  $Chloro::Role::Result::VERSION = '0.04';
+  $Chloro::Role::Result::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -23,7 +23,7 @@ Chloro::Role::Result - An interface-only role for results
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

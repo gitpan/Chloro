@@ -25,9 +25,14 @@ sub _extract_date {
         $keys{$_} = join q{.}, $prefix, $keys{$_} for keys %keys;
     }
 
-    return DateTime->new( map { $_ => $params->{ $keys{$_} } }
-            qw( year month day ) );
+    return (
+        DateTime->new(
+            map { $_ => $params->{ $keys{$_} } } qw( year month day )
+        ),
+        ( 'year', 'month', 'day' ),
+    );
 }
+
 
 __PACKAGE__->meta()->make_immutable;
 

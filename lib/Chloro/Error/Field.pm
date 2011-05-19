@@ -1,6 +1,6 @@
 package Chloro::Error::Field;
 BEGIN {
-  $Chloro::Error::Field::VERSION = '0.04';
+  $Chloro::Error::Field::VERSION = '0.05';
 }
 
 use Moose;
@@ -9,7 +9,6 @@ use MooseX::StrictConstructor;
 use namespace::autoclean;
 
 use Chloro::Field;
-use Chloro::Types qw( NonEmptyStr );
 
 with 'Chloro::Role::Error';
 
@@ -17,6 +16,13 @@ has field => (
     is       => 'ro',
     isa      => 'Chloro::Field',
     required => 1,
+);
+
+has result => (
+    is       => 'rw',
+    writer   => '_set_result',
+    isa      => 'Chloro::Result::Field',
+    weak_ref => 1,
 );
 
 has message => (
@@ -41,7 +47,7 @@ Chloro::Error::Field - An error associated with a specific field
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -64,6 +70,11 @@ This class has the following methods:
 =head2 $error->field()
 
 Returns the L<Chloro::Field> object associated with this error.
+
+=head2 $error->result()
+
+Returns the L<Chloro::Result::Field> object associated with this error. This
+is a weak reference, so it could return C<undef>.
 
 =head2 $error->message()
 

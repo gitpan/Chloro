@@ -1,6 +1,6 @@
 package Chloro::Trait::Application;
 BEGIN {
-  $Chloro::Trait::Application::VERSION = '0.04';
+  $Chloro::Trait::Application::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -25,7 +25,7 @@ Chloro::Trait::Application - A trait that supports role application for roles wi
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

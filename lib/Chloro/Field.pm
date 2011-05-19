@@ -1,6 +1,6 @@
 package Chloro::Field;
 BEGIN {
-  $Chloro::Field::VERSION = '0.04';
+  $Chloro::Field::VERSION = '0.05';
 }
 
 use Moose;
@@ -134,7 +134,7 @@ Chloro::Field - A field in a form
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -201,6 +201,9 @@ false.
 
 This is an optional method I<on the field's form> that will be used to extract
 this field's value.
+
+The extractor is expected to return a two element list. The first should be
+the name of the field in the form, the second is the value.
 
 =item * validator
 

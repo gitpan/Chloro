@@ -23,7 +23,7 @@ sub _extract_date {
         $_ = join q{.}, $prefix, $_ for @keys;
     }
 
-    return join '-', @{$params}{@keys};
+    return ( join '-', @{$params}{@keys} ), ( 'year', 'month', 'day' );
 }
 
 __PACKAGE__->meta()->make_immutable;

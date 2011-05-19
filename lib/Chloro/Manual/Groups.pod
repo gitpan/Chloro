@@ -12,7 +12,7 @@ Chloro::Manual::Groups - Repeatable groups in forms
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 WHAT'S A REPEATABLE GROUP?
 
@@ -152,10 +152,8 @@ structure back like this:
     }
 
 No matter how many phone numbers are present, the C<phone_number_id> field
-(our C<repetition_key>) will always contain an array reference.
-
-It's also possible that a phone number id will not have any associated data
-under the C<phone_number> key, if the group was empty.
+(our C<repetition_key>) will always contain an array reference. The values for
+the C<repetition_key> field will not include keys for empty groups.
 
 =head1 AUTHOR
 

@@ -1,6 +1,6 @@
 package Chloro::Role::FormComponent;
 BEGIN {
-  $Chloro::Role::FormComponent::VERSION = '0.04';
+  $Chloro::Role::FormComponent::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -46,7 +46,7 @@ Chloro::Role::FormComponent - A role for named things which are part of a form (
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

@@ -6,7 +6,6 @@ META.json
 META.yml
 Makefile.PL
 README
-SIGNATURE
 dist.ini
 lib/Chloro.pm
 lib/Chloro/Error/Field.pm
@@ -39,6 +38,7 @@ t/bool.t
 t/default.t
 t/extractor.t
 t/extractor2.t
+t/extractor3.t
 t/form-error.t
 t/group.t
 t/inheritance.t
@@ -47,6 +47,7 @@ t/lib/Chloro/Test/CompoundDate.pm
 t/lib/Chloro/Test/DateFromStr.pm
 t/lib/Chloro/Test/Default.pm
 t/lib/Chloro/Test/Login.pm
+t/lib/Chloro/Test/NoNameExtractor.pm
 t/lib/Chloro/Test/User.pm
 t/lib/Chloro/Test/Validator.pm
 t/release-cpan-changes.t

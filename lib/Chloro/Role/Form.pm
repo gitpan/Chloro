@@ -1,6 +1,6 @@
 package Chloro::Role::Form;
 BEGIN {
-  $Chloro::Role::Form::VERSION = '0.04';
+  $Chloro::Role::Form::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -83,16 +83,25 @@ sub _result_for_field {
     my $params = shift;
     my $prefix = shift;
 
-    my ( $value, @errors )
-        = $self->_validate_field( $field, $params, $prefix );
+    my @return = $self->_validate_field( $field, $params, $prefix );
 
-    @errors
-        = map { Chloro::Error::Field->new( field => $field, message => $_ ) }
-        @errors;
+    my ( $value, $names, $errors );
+    if (@return) {
+        ( $value, $names, $errors ) = @return;
+    }
+    else {
+        $names  = [];
+        $errors = [];
+    }
 
     return Chloro::Result::Field->new(
-        field  => $field,
-        errors => \@errors,
+        field       => $field,
+        param_names => $names,
+        errors      => [
+            map {
+                Chloro::Error::Field->new( field => $field, message => $_ )
+                } @{$errors}
+        ],
         ( defined $value ? ( value => $value ) : () ),
     );
 }
@@ -104,7 +113,7 @@ sub _validate_field {
     my $prefix = shift;
 
     my $extractor = $field->extractor();
-    my $value = $self->$extractor( $params, $prefix, $field );
+    my ( $value, @names ) = $self->$extractor( $params, $prefix, $field );
 
     $value = $field->generate_default( $params, $prefix )
         if !defined $value && $field->has_default();
@@ -156,7 +165,7 @@ sub _validate_field {
         }
     }
 
-    return ( $value, @errors );
+    return ( $value, \@names, \@errors );
 }
 
 sub _extract_field_value {
@@ -167,7 +176,7 @@ sub _extract_field_value {
 
     my $key = join q{.}, grep {defined} $prefix, $field->name();
 
-    return $params->{$key};
+    return ( $params->{$key}, $key );
 }
 
 sub _errors_for_field_value {
@@ -248,7 +257,7 @@ Chloro::Role::Form - A role for form classes
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

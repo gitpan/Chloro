@@ -1,6 +1,6 @@
 package Chloro::Trait::Application::ToClass;
 BEGIN {
-  $Chloro::Trait::Application::ToClass::VERSION = '0.04';
+  $Chloro::Trait::Application::ToClass::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -42,13 +42,13 @@ sub _apply_form_components {
     my $class = shift;
 
     foreach my $field ( $role->fields() ) {
-        next if $class->_has_field( $field->name() );
+        next if $class->has_field( $field->name() );
 
         $class->add_field($field);
     }
 
     foreach my $group ( $role->groups() ) {
-        next if $class->_has_group( $group->name() );
+        next if $class->has_group( $group->name() );
 
         $class->add_group($group);
     }
@@ -68,7 +68,7 @@ Chloro::Trait::Application::ToClass - A trait that supports applying Chloro fiel
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

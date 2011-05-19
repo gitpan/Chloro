@@ -1,6 +1,6 @@
 package Chloro;
 BEGIN {
-  $Chloro::VERSION = '0.04';
+  $Chloro::VERSION = '0.05';
 }
 
 use strict;
@@ -87,7 +87,7 @@ Chloro - Form Processing So Easy It Will Knock You Out
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

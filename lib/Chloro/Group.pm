@@ -1,6 +1,6 @@
 package Chloro::Group;
 BEGIN {
-  $Chloro::Group::VERSION = '0.04';
+  $Chloro::Group::VERSION = '0.05';
 }
 
 use Moose;
@@ -8,17 +8,19 @@ use MooseX::StrictConstructor;
 
 use namespace::autoclean;
 
-use Chloro::Types qw( ArrayRef CodeRef NonEmptyStr NonEmptySimpleStr );
+use Chloro::Types qw( CodeRef HashOfFields NonEmptyStr NonEmptySimpleStr );
 
 with 'Chloro::Role::FormComponent';
 
 has _fields => (
-    traits   => ['Array'],
-    isa      => ArrayRef ['Chloro::Field'],
+    traits   => ['Hash'],
+    isa      => HashOfFields,
+    coerce   => 1,
     init_arg => 'fields',
     required => 1,
     handles  => {
-        fields => 'elements',
+        fields    => 'values',
+        get_field => 'get',
     },
 );
 
@@ -59,7 +61,7 @@ Chloro::Group - A field in a form
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -119,6 +121,10 @@ A more friendly name, which defaults to the same value as C<< $group->name()
 =head2 $group->fields()
 
 Returns a list of L<Chloro::Field> objects for this group
+
+=head2 $group->get_field($name)
+
+Given a name, returns the field of that name in the group, if one exists.
 
 =head2 $group->repetition_key()
 

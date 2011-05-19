@@ -1,6 +1,6 @@
 package Chloro::Trait::Role::Composite;
 BEGIN {
-  $Chloro::Trait::Role::Composite::VERSION = '0.04';
+  $Chloro::Trait::Role::Composite::VERSION = '0.05';
 }
 
 use Moose::Role;
@@ -95,7 +95,7 @@ Chloro::Trait::Role::Composite - A trait that supports applying multiple roles a
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 DESCRIPTION
 

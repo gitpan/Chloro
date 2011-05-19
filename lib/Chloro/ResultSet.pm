@@ -1,6 +1,6 @@
 package Chloro::ResultSet;
 BEGIN {
-  $Chloro::ResultSet::VERSION = '0.04';
+  $Chloro::ResultSet::VERSION = '0.05';
 }
 
 use Moose;
@@ -21,6 +21,7 @@ has _form_errors => (
     required => 1,
     handles  => {
         form_errors      => 'elements',
+        add_form_error   => 'push',
         _has_form_errors => 'count',
     },
 );
@@ -73,16 +74,47 @@ sub _results_hash {
             $hash{ $result->group()->name() }{ $result->key() }
                 = { $result->key_value_pairs($skip_secure) };
 
-            my $rep_vals
-                = $self->_params()->{ $result->group()->repetition_key() };
+            my $group   = $result->group();
+            my $rep_key = $group->repetition_key();
 
-            $hash{ $result->group()->repetition_key() }
-                = ref $rep_vals ? $rep_vals : [$rep_vals];
+            unless ( exists $hash{$rep_key} ) {
+                my $rep_vals = $self->_params()->{$rep_key};
+
+                my @vals
+                    = grep { $self->result_for( $group->name() . q{.} . $_ ) }
+                    ref $rep_vals ? @{$rep_vals} : $rep_vals;
+
+                $hash{$rep_key} = \@vals;
+            }
         }
         else {
             next if $skip_secure && $result->field()->is_secure();
 
             %hash = ( %hash, $result->key_value_pairs() );
+        }
+    }
+
+    return \%hash;
+}
+
+sub secure_raw_params {
+    my $self = shift;
+
+    my %hash = %{ $self->_params() };
+
+    for my $result ( $self->_result_values() ) {
+        if ( $result->can('group') ) {
+            for my $field_result ( grep { $_->field()->is_secure() }
+                $result->_result_values() ) {
+
+                delete $hash{ $result->group()->prefix() . q{.}
+                        . $field_result->field()->name() };
+            }
+        }
+        else {
+            next unless $result->field()->is_secure();
+
+            delete $hash{ $result->field()->name() };
         }
     }
 
@@ -136,7 +168,7 @@ Chloro::ResultSet - The set of results from processing a form submission
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -213,9 +245,22 @@ field marked as secure is omitted. This is useful if you need to pass the form
 data in a query string or session, and you don't want to include things like
 credit card numbers or passwords.
 
+=head2 $resultset->secure_raw_params()
+
+Returns a hash reference of the original parameters passed to C<<
+$form->process() >> with any fields marked secure removed.
+
+Note that if the keys in the original params do not match the field names
+(because you used a custom extractor), then those keys will still be in the
+returned hash reference.
+
 =head2 $resultset->form_errors()
 
 Returns a list of L<Chloro::Error::Form> objects. This list may be empty.
+
+=head2 $resultset->add_form_error()
+
+Adds a L<Chloro::Error::Form> object to the resultset.
 
 =head2 $resultset->field_errors()
 

@@ -1,6 +1,6 @@
 package Chloro::Trait::Class;
 BEGIN {
-  $Chloro::Trait::Class::VERSION = '0.04';
+  $Chloro::Trait::Class::VERSION = '0.05';
 }
 
 use Moose::Role;
