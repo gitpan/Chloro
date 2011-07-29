@@ -31,7 +31,7 @@ my %WriteMakefileArgs = (
     'Tie::IxHash' => '0',
     'namespace::autoclean' => '0.12'
   },
-  'VERSION' => '0.05',
+  'VERSION' => '0.06',
   'test' => {
     'TESTS' => 't/*.t'
   }

@@ -1,6 +1,6 @@
 package Chloro::ErrorMessage;
 BEGIN {
-  $Chloro::ErrorMessage::VERSION = '0.05';
+  $Chloro::ErrorMessage::VERSION = '0.06';
 }
 
 use Moose;
@@ -38,7 +38,7 @@ Chloro::ErrorMessage - An error message
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -58,6 +58,10 @@ This class has the following methods:
 This is a string that tells what kind of error message this is. By default,
 Chloro only uses "invalid" and "missing", but there's nothing preventing you
 from using other categories in your code.
+
+=head2 $error->text()
+
+The text of the error message.
 
 =head1 AUTHOR
 

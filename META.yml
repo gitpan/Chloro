@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110440'
+generated_by: 'Dist::Zilla version 4.200012, CPAN::Meta::Converter version 2.110930'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -24,5 +24,5 @@ requires:
   namespace::autoclean: 0.12
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=Chloro
-  repository: http://hg.urth.org/hg/Chloro
-version: 0.05
+  repository: git://git.urth.org/Chloro.git
+version: 0.06

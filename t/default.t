@@ -7,7 +7,7 @@ use lib 't/lib';
 
 use Chloro::Test::Default;
 
-my $form = Chloro::Test::Login->new();
+my $form = Chloro::Test::Default->new();
 
 {
     my %params = (

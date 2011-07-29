@@ -12,7 +12,7 @@ Chloro::Manual::Intro - Basic form and field definition
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 DEFINING A BASIC FORM
 
@@ -22,7 +22,7 @@ C<use Chloro>.
 
 When you C<use Chloro>, your class is a form. A form class automatically
 consumes the L<Chloro::Role::Form> role. Since you're still using Moose, you
-can inherit from other classes, define attributes, consumer other roles, etc.
+can inherit from other classes, define attributes, consumes other roles, etc.
 
 You can also C<use Chloro> in a role, and then compose those form roles into
 form classes.
@@ -116,7 +116,7 @@ submission is not valid.
 =item * secure
 
 If a field is marked as secure, then it is excluded from the data returned by
-the L<Chloro::ResultSet> class's C<secure_results()> method.
+the L<Chloro::ResultSet> class's C<secure_results_as_hash()> method.
 
 The primary use of this is to avoid putting sensitive data like passwords or
 credit cards numbers in a session or query parameter.

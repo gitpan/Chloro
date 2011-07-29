@@ -1,6 +1,6 @@
 package Chloro::Types;
 BEGIN {
-  $Chloro::Types::VERSION = '0.05';
+  $Chloro::Types::VERSION = '0.06';
 }
 
 use strict;

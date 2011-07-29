@@ -1,6 +1,6 @@
 package Chloro::Group;
 BEGIN {
-  $Chloro::Group::VERSION = '0.05';
+  $Chloro::Group::VERSION = '0.06';
 }
 
 use Moose;
@@ -61,7 +61,7 @@ Chloro::Group - A field in a form
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 

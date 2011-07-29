@@ -1,6 +1,6 @@
 package Chloro::Error::Field;
 BEGIN {
-  $Chloro::Error::Field::VERSION = '0.05';
+  $Chloro::Error::Field::VERSION = '0.06';
 }
 
 use Moose;
@@ -47,7 +47,7 @@ Chloro::Error::Field - An error associated with a specific field
 
 =head1 VERSION
 
-version 0.05
+version 0.06
 
 =head1 SYNOPSIS
 
@@ -56,7 +56,7 @@ version 0.05
     for my $message ( @{$errors} ) {
         print $message->field()->name();
         print ': ';
-        print $message->error()->message();
+        print $message->error()->text();
     }
 
 =head1 DESCRIPTION

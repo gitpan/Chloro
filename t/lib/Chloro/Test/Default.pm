@@ -1,4 +1,4 @@
-package Chloro::Test::Login;
+package Chloro::Test::Default;
 
 use Moose;
 use Chloro;
